@@ -6,52 +6,58 @@
 
 #define MAXSIZE 100
 
-bool isEmpty (int* s, int t) {
+bool isEmpty(int *s, int t)
+{
   // returns true if t = -1
-    return t == -1;
+  return t == -1;
 }
 
-bool isFull (int* s, int t) {
+bool isFull(int *s, int t)
+{
   // returns true if no more room in the stack
-	return t >= MAXSIZE - 1;
+  return t >= MAXSIZE - 1;
 }
 
-void push(int v, int* s, int* tp) {
+void push(int v, int *s, int *tp)
+{
   // put v onto the top of the stack s unless it is already full
-
-  // INSERT YOUR CODE HERE
-  	
-    if(!isFull(s, *tp)){
-	(*tp) ++;
-	s[*tp] = v;
-	printf("push successfully,the tp is : %d\n", *tp);
-    }else{
-        printf("the stack is full\n");
-	}
+  if (!isFull(s, *tp))
+  {
+    (*tp)++;
+    s[*tp] = v;
+    printf("push successfully,the top is : %d\n", *tp);
+  }
+  else
+  {
+    printf("the stack is full\n");
+  }
 }
 
-int pop (int* s, int* tp) {
+int pop(int *s, int *tp)
+{
   // return the top entry in the stack unless stack is empty
   // update s and *tp -- requires top to be passed by reference!
-
-  // INSERT YOUR CODE HERE
-      if(!isEmpty(s, *tp)){
-          int val = s[*tp];
-	  (*tp) --;
-            return val;
-        }else{
-            printf("The stack is empty");
-	    return -1;
-        }
+  if (!isEmpty(s, *tp))
+  {
+    int val = s[*tp];
+    (*tp)--;
+    return val;
+  }
+  else
+  {
+    printf("The stack is empty");
+    return -1;
+  }
 }
 
-int main () {
+int main()
+{
 
   int stack1[MAXSIZE]; // array in which stack will live
   int top1 = -1;       // top valid location in stack, -1 == empty
   int stack2[MAXSIZE]; // array in which stack will live
   int top2 = -1;       // top valid location in stack, -1 == empty
-  
+
   printf("pushing: 1, 2, 3, 4, 5 onto first stack\n");
   printf("pushing: 100, 200, 300, 400, 500 onto second stack\n\n");
   push(1, stack1, &top1);
@@ -66,17 +72,17 @@ int main () {
   push(500, stack2, &top2);
 
   printf("popping alternating stacks:\n");
-  printf("1> %d\n",pop(stack1, &top1));
-  printf("2> %d\n",pop(stack2, &top2));
-  printf("1> %d\n",pop(stack1, &top1));
-  printf("2> %d\n",pop(stack2, &top2));
-  printf("1> %d\n",pop(stack1, &top1));
-  printf("2> %d\n",pop(stack2, &top2));
-  printf("1> %d\n",pop(stack1, &top1));
-  printf("2> %d\n",pop(stack2, &top2));
-  printf("1> %d\n",pop(stack1, &top1));
-  printf("2> %d\n",pop(stack2, &top2));
-  printf("1> %d\n",pop(stack1, &top1));
-  printf("2> %d\n",pop(stack2, &top2));
+  printf("1> %d\n", pop(stack1, &top1));
+  printf("2> %d\n", pop(stack2, &top2));
+  printf("1> %d\n", pop(stack1, &top1));
+  printf("2> %d\n", pop(stack2, &top2));
+  printf("1> %d\n", pop(stack1, &top1));
+  printf("2> %d\n", pop(stack2, &top2));
+  printf("1> %d\n", pop(stack1, &top1));
+  printf("2> %d\n", pop(stack2, &top2));
+  printf("1> %d\n", pop(stack1, &top1));
+  printf("2> %d\n", pop(stack2, &top2));
+  printf("1> %d\n", pop(stack1, &top1));
+  printf("2> %d\n", pop(stack2, &top2));
   return 0;
 }

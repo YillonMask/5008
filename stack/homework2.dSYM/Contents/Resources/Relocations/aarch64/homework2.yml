@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/xinruiyi/Documents/GitHub/5008/CS 5008/stack/homework2'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _isEmpty, symObjAddr: 0x0, symBinAddr: 0x100003A50, symSize: 0x24 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _isEmpty, symObjAddr: 0x0, symBinAddr: 0x100003A50, symSize: 0x24 }
+  - { offsetInCU: 0x77, offset: 0x77, size: 0x8, addend: 0x0, symName: _isFull, symObjAddr: 0x24, symBinAddr: 0x100003A74, symSize: 0x24 }
+  - { offsetInCU: 0xAD, offset: 0xAD, size: 0x8, addend: 0x0, symName: _push, symObjAddr: 0x48, symBinAddr: 0x100003A98, symSize: 0x94 }
+  - { offsetInCU: 0xED, offset: 0xED, size: 0x8, addend: 0x0, symName: _pop, symObjAddr: 0xDC, symBinAddr: 0x100003B2C, symSize: 0x84 }
+  - { offsetInCU: 0x13F, offset: 0x13F, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x160, symBinAddr: 0x100003BB0, symSize: 0x2FC }
+...
