@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void sortInteger(int *array, unsigned int length)
 {
@@ -12,6 +13,7 @@ void sortInteger(int *array, unsigned int length)
         {
             if (array[j] > array[j + 1])
             {
+                // swap if greater is at the rear position
                 temp = array[j + 1];
                 array[j + 1] = array[j];
                 array[j] = temp;
@@ -22,10 +24,18 @@ void sortInteger(int *array, unsigned int length)
 
 int main()
 {
-    int numbers[] = {1, 5, 3, 4, 2};
-    sortInteger(numbers, 5);
-    for (int i = 0; i < 5; i++)
+    // assign a size of the array
+    long size = 100;
+    int* numbers = (int*)malloc(size * sizeof(int));
+    for (int i = 0; i < size; i++)
     {
-        printf("%d ", numbers[i]);
+        // assign random numbers from 0 to size of the array
+        numbers[i] = rand() % size;
+
     }
+    clock_t start_time = clock();
+    //bubbleSort(numbers, size);
+    clock_t end_time = clock();
+    double time_spent = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+    printf("total time spent during bubble sort is: %f\n", time_spent);
 }

@@ -112,8 +112,7 @@ int main(){
     	// Add elements to the list
 	if (!push_front(myList, 3) || !push_front(myList, 2) || !push_front(myList, 1)) {
         fprintf(stderr, "Failed to add elements to the list.\n");
-        // Free the list if it was created
-        return 1;
+		return 1;
     }
 	printNodes(myList->head);
 	
