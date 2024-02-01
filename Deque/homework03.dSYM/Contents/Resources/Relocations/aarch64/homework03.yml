@@ -1,15 +1,15 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/xinruiyi/Documents/GitHub/5008/CS 5008/Deque/homework03'
+binary-path:     '/Users/xinruiyi/Desktop/5008/CS 5008/Deque/homework03'
 relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _newNode, symObjAddr: 0x0, symBinAddr: 0x100003A30, symSize: 0x64 }
-  - { offsetInCU: 0xC2, offset: 0xC2, size: 0x8, addend: 0x0, symName: _newNode, symObjAddr: 0x0, symBinAddr: 0x100003A30, symSize: 0x64 }
-  - { offsetInCU: 0xF8, offset: 0xF8, size: 0x8, addend: 0x0, symName: _freeNode, symObjAddr: 0x64, symBinAddr: 0x100003A94, symSize: 0x3C }
-  - { offsetInCU: 0x11C, offset: 0x11C, size: 0x8, addend: 0x0, symName: _newQueue, symObjAddr: 0xA0, symBinAddr: 0x100003AD0, symSize: 0x50 }
-  - { offsetInCU: 0x144, offset: 0x144, size: 0x8, addend: 0x0, symName: _isEmpty, symObjAddr: 0xF0, symBinAddr: 0x100003B20, symSize: 0x50 }
-  - { offsetInCU: 0x17A, offset: 0x17A, size: 0x8, addend: 0x0, symName: _enqueue, symObjAddr: 0x140, symBinAddr: 0x100003B70, symSize: 0xB8 }
-  - { offsetInCU: 0x1BA, offset: 0x1BA, size: 0x8, addend: 0x0, symName: _dequeue, symObjAddr: 0x1F8, symBinAddr: 0x100003C28, symSize: 0xCC }
-  - { offsetInCU: 0x1FE, offset: 0x1FE, size: 0x8, addend: 0x0, symName: _freeQueue, symObjAddr: 0x2C4, symBinAddr: 0x100003CF4, symSize: 0x5C }
-  - { offsetInCU: 0x222, offset: 0x222, size: 0x8, addend: 0x0, symName: _getRandom, symObjAddr: 0x320, symBinAddr: 0x100003D50, symSize: 0x34 }
-  - { offsetInCU: 0x24A, offset: 0x24A, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x354, symBinAddr: 0x100003D84, symSize: 0x194 }
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _newNode, symObjAddr: 0x0, symBinAddr: 0x100003A44, symSize: 0x64 }
+  - { offsetInCU: 0xC2, offset: 0xC2, size: 0x8, addend: 0x0, symName: _newNode, symObjAddr: 0x0, symBinAddr: 0x100003A44, symSize: 0x64 }
+  - { offsetInCU: 0xF8, offset: 0xF8, size: 0x8, addend: 0x0, symName: _freeNode, symObjAddr: 0x64, symBinAddr: 0x100003AA8, symSize: 0x3C }
+  - { offsetInCU: 0x11C, offset: 0x11C, size: 0x8, addend: 0x0, symName: _newQueue, symObjAddr: 0xA0, symBinAddr: 0x100003AE4, symSize: 0x50 }
+  - { offsetInCU: 0x144, offset: 0x144, size: 0x8, addend: 0x0, symName: _isEmpty, symObjAddr: 0xF0, symBinAddr: 0x100003B34, symSize: 0x50 }
+  - { offsetInCU: 0x17A, offset: 0x17A, size: 0x8, addend: 0x0, symName: _enqueue, symObjAddr: 0x140, symBinAddr: 0x100003B84, symSize: 0xB0 }
+  - { offsetInCU: 0x1BA, offset: 0x1BA, size: 0x8, addend: 0x0, symName: _dequeue, symObjAddr: 0x1F0, symBinAddr: 0x100003C34, symSize: 0xC0 }
+  - { offsetInCU: 0x1FE, offset: 0x1FE, size: 0x8, addend: 0x0, symName: _freeQueue, symObjAddr: 0x2B0, symBinAddr: 0x100003CF4, symSize: 0x5C }
+  - { offsetInCU: 0x222, offset: 0x222, size: 0x8, addend: 0x0, symName: _getRandom, symObjAddr: 0x30C, symBinAddr: 0x100003D50, symSize: 0x34 }
+  - { offsetInCU: 0x24A, offset: 0x24A, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x340, symBinAddr: 0x100003D84, symSize: 0x194 }
 ...

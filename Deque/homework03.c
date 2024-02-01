@@ -117,7 +117,7 @@ void enqueue(queue_t *q_p, int d)
       n_p = newNode(d);
       q_p->tail_p->left_p = n_p;
       n_p->right_p = q_p->tail_p;
-      n_p->left_p = NULL;
+      // n_p->left_p = NULL; // not necessary since newNode() already set it to NULL
       q_p->tail_p = n_p;
     }
   }
@@ -153,7 +153,7 @@ int dequeue(queue_t *q_p)
 
         // ***** INSERT YOUR CODE HERE *****
         q_p->head_p = n_p->left_p;
-        q_p->head_p->right_p = NULL;
+        // q_p->head_p->right_p = NULL; // not necessary since newNode() already set it to NULL
       }
 
       freeNode(n_p); // free up the node that was dequeued
