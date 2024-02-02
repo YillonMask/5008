@@ -1,0 +1,10 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/stingrayyee/Documents/GitHub/5008/lab04/lab04'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _swap, symObjAddr: 0x0, symBinAddr: 0x100003BEC, symSize: 0x3C }
+  - { offsetInCU: 0x54, offset: 0x54, size: 0x8, addend: 0x0, symName: _swap, symObjAddr: 0x0, symBinAddr: 0x100003BEC, symSize: 0x3C }
+  - { offsetInCU: 0x94, offset: 0x94, size: 0x8, addend: 0x0, symName: _printIntArray, symObjAddr: 0x3C, symBinAddr: 0x100003C28, symSize: 0x84 }
+  - { offsetInCU: 0xD4, offset: 0xD4, size: 0x8, addend: 0x0, symName: _bubblesort, symObjAddr: 0xC0, symBinAddr: 0x100003CAC, symSize: 0xE0 }
+  - { offsetInCU: 0x13E, offset: 0x13E, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1A0, symBinAddr: 0x100003D8C, symSize: 0x15C }
+...
