@@ -1,0 +1,12 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/xinruiyi/Desktop/5008/CS 5008/HW05/quickSort'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _randChar, symObjAddr: 0x0, symBinAddr: 0x100003A88, symSize: 0x2C }
+  - { offsetInCU: 0x48, offset: 0x48, size: 0x8, addend: 0x0, symName: _randChar, symObjAddr: 0x0, symBinAddr: 0x100003A88, symSize: 0x2C }
+  - { offsetInCU: 0x61, offset: 0x61, size: 0x8, addend: 0x0, symName: _upperChar, symObjAddr: 0x2C, symBinAddr: 0x100003AB4, symSize: 0x58 }
+  - { offsetInCU: 0x89, offset: 0x89, size: 0x8, addend: 0x0, symName: _swap, symObjAddr: 0x84, symBinAddr: 0x100003B0C, symSize: 0x58 }
+  - { offsetInCU: 0xD7, offset: 0xD7, size: 0x8, addend: 0x0, symName: _partition, symObjAddr: 0xDC, symBinAddr: 0x100003B64, symSize: 0xCC }
+  - { offsetInCU: 0x153, offset: 0x153, size: 0x8, addend: 0x0, symName: _quicky, symObjAddr: 0x1A8, symBinAddr: 0x100003C30, symSize: 0x80 }
+  - { offsetInCU: 0x1A1, offset: 0x1A1, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x228, symBinAddr: 0x100003CB0, symSize: 0x278 }
+...
