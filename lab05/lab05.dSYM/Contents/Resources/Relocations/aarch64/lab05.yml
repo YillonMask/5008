@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/xinruiyi/Desktop/5008/CS 5008/lab05/lab05'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _merge, symObjAddr: 0x0, symBinAddr: 0x100003AC8, symSize: 0x22C }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _merge, symObjAddr: 0x0, symBinAddr: 0x100003AC8, symSize: 0x22C }
+  - { offsetInCU: 0xD9, offset: 0xD9, size: 0x8, addend: 0x0, symName: _mergeSort, symObjAddr: 0x22C, symBinAddr: 0x100003CF4, symSize: 0xDC }
+  - { offsetInCU: 0x147, offset: 0x147, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x308, symBinAddr: 0x100003DD0, symSize: 0x168 }
+...
