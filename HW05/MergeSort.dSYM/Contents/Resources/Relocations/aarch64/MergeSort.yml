@@ -1,0 +1,12 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/xinruiyi/Desktop/5008/CS 5008/HW05/MergeSort'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _randChar, symObjAddr: 0x0, symBinAddr: 0x100003800, symSize: 0x2C }
+  - { offsetInCU: 0x48, offset: 0x48, size: 0x8, addend: 0x0, symName: _randChar, symObjAddr: 0x0, symBinAddr: 0x100003800, symSize: 0x2C }
+  - { offsetInCU: 0x61, offset: 0x61, size: 0x8, addend: 0x0, symName: _midPoint, symObjAddr: 0x2C, symBinAddr: 0x10000382C, symSize: 0x30 }
+  - { offsetInCU: 0x97, offset: 0x97, size: 0x8, addend: 0x0, symName: _findMin, symObjAddr: 0x5C, symBinAddr: 0x10000385C, symSize: 0x48 }
+  - { offsetInCU: 0xCD, offset: 0xCD, size: 0x8, addend: 0x0, symName: _mergeIt, symObjAddr: 0xA4, symBinAddr: 0x1000038A4, symSize: 0x330 }
+  - { offsetInCU: 0x1E2, offset: 0x1E2, size: 0x8, addend: 0x0, symName: _msort, symObjAddr: 0x3D4, symBinAddr: 0x100003BD4, symSize: 0xE4 }
+  - { offsetInCU: 0x222, offset: 0x222, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x4B8, symBinAddr: 0x100003CB8, symSize: 0x278 }
+...
