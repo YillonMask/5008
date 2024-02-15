@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void swap(int *a, int *b)
+{ // int *a here is to indicate a and b are pointers
+    // here asterisk *a indicate it is dereferencing the pointers to values
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 void selectionSort(int *arr, int n)
 {
     int i, j, min, temp;
@@ -13,15 +21,13 @@ void selectionSort(int *arr, int n)
                 min = j;
         }
         // swap the smallest element with the element at i
-        temp = arr[i];
-        arr[i] = arr[min];
-        arr[min] = temp;
+        swap(&arr[i], &arr[min]); // when call swap, we pass the addresses of arr[], the & operator is used to  get the address
     }
 }
 
 int main()
 {
-    int numbers[] = {8, 5, 1, 3, 7};
+    int numbers[] = {8, 6, 1, 3, 7};
     selectionSort(numbers, 5);
     for (int i = 0; i < 5; i++)
     {
