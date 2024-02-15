@@ -1,0 +1,8 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/xinruiyi/Desktop/5008/CS 5008/HW04/two_array_selectionSort'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _swap, symObjAddr: 0x0, symBinAddr: 0x100003B6C, symSize: 0x3C }
+  - { offsetInCU: 0x48, offset: 0x48, size: 0x8, addend: 0x0, symName: _swap, symObjAddr: 0x0, symBinAddr: 0x100003B6C, symSize: 0x3C }
+  - { offsetInCU: 0x88, offset: 0x88, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x3C, symBinAddr: 0x100003BA8, symSize: 0x390 }
+...
