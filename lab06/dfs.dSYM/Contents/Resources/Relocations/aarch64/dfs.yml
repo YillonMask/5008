@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/stingrayyee/Documents/GitHub/5008/lab06/dfs'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _dfs, symObjAddr: 0x0, symBinAddr: 0x100003CD4, symSize: 0x70 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _dfs, symObjAddr: 0x0, symBinAddr: 0x100003CD4, symSize: 0x70 }
+  - { offsetInCU: 0x65, offset: 0x65, size: 0x8, addend: 0x0, symName: _free_tree, symObjAddr: 0x70, symBinAddr: 0x100003D44, symSize: 0x58 }
+  - { offsetInCU: 0x89, offset: 0x89, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xC8, symBinAddr: 0x100003D9C, symSize: 0x1E4 }
+...
