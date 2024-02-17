@@ -81,11 +81,13 @@ void mergeIt(
         }
         k++;
     }
-    if (i < leftsize)
+    // while not if, we want all the remained array
+    while (i < leftsize)
     {
         data[k++] = L[i++];
     }
-    if (j < rightsize)
+    // while
+    while (j < rightsize)
     {
         data[k++] = R[j++];
     }
@@ -169,6 +171,13 @@ int main()
         printf("\n");
     }
     printf("\n");
+    char dataset5[] = {-1, 1, 2, -3, 4, 5, -6, 7, 8, -9, 10};
+    int dataset5_length = sizeof(dataset5) / sizeof(dataset5[0]);
+    msort(dataset5, 0, dataset5_length - 1);
+    for (int i = 0; i < dataset5_length; i++)
+    {
+        printf("%d ", dataset5[i]);
+    }
 
     return 0;
 }
