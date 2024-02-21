@@ -1,0 +1,22 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/stingrayyee/Documents/GitHub/5008/HW06/tree_hw06'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _newTNode, symObjAddr: 0x0, symBinAddr: 0x10000354C, symSize: 0x60 }
+  - { offsetInCU: 0xF6, offset: 0xF6, size: 0x8, addend: 0x0, symName: _newTNode, symObjAddr: 0x0, symBinAddr: 0x10000354C, symSize: 0x60 }
+  - { offsetInCU: 0x12C, offset: 0x12C, size: 0x8, addend: 0x0, symName: _freeTNode, symObjAddr: 0x60, symBinAddr: 0x1000035AC, symSize: 0x54 }
+  - { offsetInCU: 0x150, offset: 0x150, size: 0x8, addend: 0x0, symName: _getFirstChar, symObjAddr: 0xB4, symBinAddr: 0x100003600, symSize: 0x84 }
+  - { offsetInCU: 0x186, offset: 0x186, size: 0x8, addend: 0x0, symName: _insertTNode, symObjAddr: 0x138, symBinAddr: 0x100003684, symSize: 0x140 }
+  - { offsetInCU: 0x1C6, offset: 0x1C6, size: 0x8, addend: 0x0, symName: _newQNode, symObjAddr: 0x278, symBinAddr: 0x1000037C4, symSize: 0x64 }
+  - { offsetInCU: 0x1FC, offset: 0x1FC, size: 0x8, addend: 0x0, symName: _freeQNode, symObjAddr: 0x2DC, symBinAddr: 0x100003828, symSize: 0x3C }
+  - { offsetInCU: 0x220, offset: 0x220, size: 0x8, addend: 0x0, symName: _newQueue, symObjAddr: 0x318, symBinAddr: 0x100003864, symSize: 0x50 }
+  - { offsetInCU: 0x248, offset: 0x248, size: 0x8, addend: 0x0, symName: _isEmpty, symObjAddr: 0x368, symBinAddr: 0x1000038B4, symSize: 0x94 }
+  - { offsetInCU: 0x27E, offset: 0x27E, size: 0x8, addend: 0x0, symName: _enqueue, symObjAddr: 0x3FC, symBinAddr: 0x100003948, symSize: 0xB0 }
+  - { offsetInCU: 0x2BE, offset: 0x2BE, size: 0x8, addend: 0x0, symName: _dequeue, symObjAddr: 0x4AC, symBinAddr: 0x1000039F8, symSize: 0xCC }
+  - { offsetInCU: 0x302, offset: 0x302, size: 0x8, addend: 0x0, symName: _freeQueue, symObjAddr: 0x578, symBinAddr: 0x100003AC4, symSize: 0x5C }
+  - { offsetInCU: 0x326, offset: 0x326, size: 0x8, addend: 0x0, symName: _preorder, symObjAddr: 0x5D4, symBinAddr: 0x100003B20, symSize: 0x70 }
+  - { offsetInCU: 0x34A, offset: 0x34A, size: 0x8, addend: 0x0, symName: _inorder, symObjAddr: 0x644, symBinAddr: 0x100003B90, symSize: 0x70 }
+  - { offsetInCU: 0x36E, offset: 0x36E, size: 0x8, addend: 0x0, symName: _postorder, symObjAddr: 0x6B4, symBinAddr: 0x100003C00, symSize: 0x70 }
+  - { offsetInCU: 0x394, offset: 0x394, size: 0x8, addend: 0x0, symName: _breadthFirst, symObjAddr: 0x724, symBinAddr: 0x100003C70, symSize: 0x10 }
+  - { offsetInCU: 0x3BA, offset: 0x3BA, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x734, symBinAddr: 0x100003C80, symSize: 0x16C }
+...
