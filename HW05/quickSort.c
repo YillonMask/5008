@@ -47,7 +47,7 @@ int partition(char *data, int left, int right)
 {
     int pivot = data[left];
 
-    int j = left; // 空区间
+    int j = left; // boundary of left and right
     // all in nums[left +1 .. j] <= pivot
     // all in nums(j..i) > pivot
     for (int i = left + 1; i <= right; i++)
