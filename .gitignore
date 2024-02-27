@@ -8,3 +8,4 @@ HW05/.DS_Store
 *.plist
 lab04/lab04_bubbleSort.dSYM/Contents/Resources/DWARF/lab04_bubbleSort
 lab04/lab04_bubbleSort.dSYM/Contents/Resources/Relocations/aarch64/lab04_bubbleSort.yml
+.DS_Store
