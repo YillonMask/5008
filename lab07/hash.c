@@ -92,8 +92,6 @@ void freeHashMap(hashmap_t *map)
         {
             node_t *temp = current;
             current = current->next;
-            free(temp->kv->name);
-            free(temp->kv);
             free(temp);
         }
     }
