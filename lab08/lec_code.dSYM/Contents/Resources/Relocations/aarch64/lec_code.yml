@@ -1,0 +1,15 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/xinruiyi/Desktop/5008/CS 5008/lab08/lec_code'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _initprioQ, symObjAddr: 0x0, symBinAddr: 0x1000039D0, symSize: 0x48 }
+  - { offsetInCU: 0x7E, offset: 0x7E, size: 0x8, addend: 0x0, symName: _initprioQ, symObjAddr: 0x0, symBinAddr: 0x1000039D0, symSize: 0x48 }
+  - { offsetInCU: 0xB4, offset: 0xB4, size: 0x8, addend: 0x0, symName: _swap, symObjAddr: 0x48, symBinAddr: 0x100003A18, symSize: 0x3C }
+  - { offsetInCU: 0xF4, offset: 0xF4, size: 0x8, addend: 0x0, symName: _maxHeapifyUp, symObjAddr: 0x84, symBinAddr: 0x100003A54, symSize: 0xD4 }
+  - { offsetInCU: 0x126, offset: 0x126, size: 0x8, addend: 0x0, symName: _maxHeapifyDown, symObjAddr: 0x158, symBinAddr: 0x100003B28, symSize: 0x144 }
+  - { offsetInCU: 0x182, offset: 0x182, size: 0x8, addend: 0x0, symName: _insert, symObjAddr: 0x29C, symBinAddr: 0x100003C6C, symSize: 0x58 }
+  - { offsetInCU: 0x1B4, offset: 0x1B4, size: 0x8, addend: 0x0, symName: _extractMax, symObjAddr: 0x2F4, symBinAddr: 0x100003CC4, symSize: 0xAC }
+  - { offsetInCU: 0x1EA, offset: 0x1EA, size: 0x8, addend: 0x0, symName: _freepq, symObjAddr: 0x3A0, symBinAddr: 0x100003D70, symSize: 0x30 }
+  - { offsetInCU: 0x20E, offset: 0x20E, size: 0x8, addend: 0x0, symName: _findKthLargest, symObjAddr: 0x3D0, symBinAddr: 0x100003DA0, symSize: 0xD0 }
+  - { offsetInCU: 0x2A6, offset: 0x2A6, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x4A0, symBinAddr: 0x100003E70, symSize: 0xB8 }
+...
