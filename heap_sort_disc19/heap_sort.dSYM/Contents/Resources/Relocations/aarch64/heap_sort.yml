@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/stingrayyee/Documents/GitHub/5008/heap_sort_disc19/heap_sort'
+binary-path:     '/Users/xinruiyi/Desktop/5008/CS 5008/heap_sort_disc19/heap_sort'
 relocations:
   - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _heapify, symObjAddr: 0x0, symBinAddr: 0x100003B50, symSize: 0x1AC }
   - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _heapify, symObjAddr: 0x0, symBinAddr: 0x100003B50, symSize: 0x1AC }

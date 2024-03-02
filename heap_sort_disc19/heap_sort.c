@@ -1,25 +1,29 @@
 
 #include <stdio.h>
 
-void heapify(int arr[], int n, int i) {
+void heapify(int arr[], int n, int i)
+{
     int largest = i;
     int left = 2 * i + 1;
     int right = 2 * i + 2;
-    
-        // if it is not greater than children, swap the node and children.
-    if (left < n && arr[left] > arr[largest]){
+
+    // if it is not greater than children, swap the node and children.
+    if (left < n && arr[left] > arr[largest])
+    {
         // TODO: CODE HERE;
         int temp = arr[left];
         arr[left] = arr[largest];
         arr[largest] = temp;
     }
-    if (right < n && arr[right] > arr[largest]){
-         // TODO: CODE HERE;
-         int temp = arr[right];
-         arr[right] = arr[largest];
-         arr[largest] = temp;
+    if (right < n && arr[right] > arr[largest])
+    {
+        // TODO: CODE HERE;
+        int temp = arr[right];
+        arr[right] = arr[largest];
+        arr[largest] = temp;
     }
-    if (largest != i) {
+    if (largest != i)
+    {
         // if the largest is not at index i, swap it with index i
         int temp = arr[i];
         arr[i] = arr[largest];
@@ -30,21 +34,23 @@ void heapify(int arr[], int n, int i) {
     }
 }
 
-void buildMaxHeap(int arr[], int n) {
+void buildMaxHeap(int arr[], int n)
+{
     // Build max heap
-    for (int i = n / 2 - 1; i >= 0; i--){
-            heapify(arr, n, i);
-        }
-        
+    for (int i = n / 2 - 1; i >= 0; i--)
+    {
+        heapify(arr, n, i);
+    }
 }
 
-
-void heapSort(int arr[], int n) {
+void heapSort(int arr[], int n)
+{
     // Build max heap
     buildMaxHeap(arr, n);
 
     // Extract elements from the heap one by one
-    for (int i = n - 1; i > 0; i--) {
+    for (int i = n - 1; i > 0; i--)
+    {
         // Swap the root (maximum element) with the last element
         int temp = arr[0];
         arr[0] = arr[i];
@@ -52,19 +58,21 @@ void heapSort(int arr[], int n) {
 
         // Heapify the reduced heap
         // TODO: CODE HERE;
-        heapify(arr, i , 0);
+        heapify(arr, i, 0);
     }
 }
 
-void printArray(int arr[], int size) {
+void printArray(int arr[], int size)
+{
     for (int i = 0; i < size; i++)
         printf("%d ", arr[i]);
     printf("\n");
 }
 
-int main() {
+int main()
+{
     // Initialize an array
-    int arr[] = {7,5,8,12,9,10};
+    int arr[] = {7, 5, 8, 12, 11, 10};
     int n = sizeof(arr) / sizeof(arr[0]);
 
     printf("Original array: \n");
