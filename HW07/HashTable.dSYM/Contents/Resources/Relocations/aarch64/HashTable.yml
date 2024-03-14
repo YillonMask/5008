@@ -1,12 +1,12 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/xinruiyi/Desktop/5008/CS 5008/HW07/HashTable'
+binary-path:     '/Users/stingrayyee/Documents/GitHub/5008/HW07/HashTable'
 relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _hash, symObjAddr: 0x0, symBinAddr: 0x100003AF0, symSize: 0x98 }
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _hash, symObjAddr: 0x0, symBinAddr: 0x100003A50, symSize: 0x9C }
   - { offsetInCU: 0x4D, offset: 0x4D, size: 0x8, addend: 0x0, symName: _hashTable, symBinAddr: 0x100008000, symSize: 0x0 }
-  - { offsetInCU: 0x9B, offset: 0x9B, size: 0x8, addend: 0x0, symName: _hash, symObjAddr: 0x0, symBinAddr: 0x100003AF0, symSize: 0x98 }
-  - { offsetInCU: 0x109, offset: 0x109, size: 0x8, addend: 0x0, symName: _insert, symObjAddr: 0x98, symBinAddr: 0x100003B88, symSize: 0xAC }
-  - { offsetInCU: 0x13B, offset: 0x13B, size: 0x8, addend: 0x0, symName: _cmp, symObjAddr: 0x144, symBinAddr: 0x100003C34, symSize: 0x38 }
-  - { offsetInCU: 0x18D, offset: 0x18D, size: 0x8, addend: 0x0, symName: _printFrequencies, symObjAddr: 0x17C, symBinAddr: 0x100003C6C, symSize: 0x164 }
-  - { offsetInCU: 0x1F7, offset: 0x1F7, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x2E0, symBinAddr: 0x100003DD0, symSize: 0x138 }
+  - { offsetInCU: 0x9B, offset: 0x9B, size: 0x8, addend: 0x0, symName: _hash, symObjAddr: 0x0, symBinAddr: 0x100003A50, symSize: 0x9C }
+  - { offsetInCU: 0xED, offset: 0xED, size: 0x8, addend: 0x0, symName: _insert, symObjAddr: 0x9C, symBinAddr: 0x100003AEC, symSize: 0x12C }
+  - { offsetInCU: 0x11F, offset: 0x11F, size: 0x8, addend: 0x0, symName: _cmp, symObjAddr: 0x1C8, symBinAddr: 0x100003C18, symSize: 0x40 }
+  - { offsetInCU: 0x171, offset: 0x171, size: 0x8, addend: 0x0, symName: _printFrequencies, symObjAddr: 0x208, symBinAddr: 0x100003C58, symSize: 0x164 }
+  - { offsetInCU: 0x1DB, offset: 0x1DB, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x36C, symBinAddr: 0x100003DBC, symSize: 0x138 }
 ...

@@ -7,110 +7,97 @@
 
 #define TABLE_SIZE 50
 
-// build the hashtable,each bucket contains the word and its frequency
-typedef struct
-{
+typedef struct {
     char *word;
     int frequency;
 } HashItem;
 
-// create an array of pointers to HashItem objects. The array is of size TABLE_SIZE
-HashItem *hashTable[TABLE_SIZE];
+HashItem* hashTable[TABLE_SIZE];
 
-unsigned int hash(const char *word)
-{
+unsigned int hash(const char *word) {
     unsigned long int value = 0;
     unsigned int i = 0;
-    // here we hash each word inside the array of words
     unsigned int word_len = strlen(word);
 
-    // insert your code below to implement your hashing logic
-    //  .....
-    for (int i = 0; i < word_len; i++)
-    {
-        //"polynomial trolling hash function"
-        value = (value * 128 + word[i]) % TABLE_SIZE;
+    //insert your code below to implement your hashing logic 
+    // .....
+    for(;i < word_len;i++){
+        value = (value * 37 + word[i]) % TABLE_SIZE;
     }
     return value;
-    // insert your code above
+    //insert your code above
 }
 
-void insert(const char *word)
-{
+void insert(const char *word) {
     unsigned int index = hash(word);
-
-    // insert you code to implement 'insert' function
-    //  ....
-    // if that bucket is empty
-    if (hashTable[index] == NULL)
-    {
-        // allocate momory for that bucket
-        hashTable[index] = (HashItem *)malloc(sizeof(HashItem));
-        // set the word to be the give word
-        hashTable[index]->word = strdup(word);
-        // set the frequency to be 1
-        hashTable[index]->frequency = 1;
+    
+    // Linear probing to find an empty slot or a slot with the same key
+    // hashtable is not empty and the word is not the same as the word in the bucket
+    while (hashTable[index] != NULL && strncmp(hashTable[index]->word, word, TABLE_SIZE) != 0) {
+        // insert your code here
+        index = (index + 1) % TABLE_SIZE;
     }
-    else
-    {
-        // if not, increment the frequency by 1
+    
+    // If the slot is occupied, update the frequency; otherwise, insert a new item
+    if (hashTable[index] != NULL) {
+        // insert your code here 
         hashTable[index]->frequency++;
+    } else {    
+    // Allocate memory for a new HashItem and copy the word
+    //insert you code below
+    // ....
+    hashTable[index] = (HashItem*)malloc(sizeof(HashItem));
+    hashTable[index]->word = strdup(word);
+    hashTable[index]->frequency = 1;
+    //insert your code above
     }
-    // insert your code above
 }
 
-// comparator function
-int cmp(const void *a, const void *b)
-{
-    // insert your code to to sort hash items by frequency in ascending order
+int cmp(const void *a, const void *b) {
+    //insert your code to to sort hash items by frequency in ascending order
     //.....
-    int int_a = *((int *)a);
-    int int_b = *((int *)b);
-    return int_a - int_b;
-    // insert your code above
+    HashItem *item_a = *(HashItem **)a;
+    HashItem *item_b = *(HashItem **)b;
+    return item_b->frequency - item_a->frequency;
+    //insert your code above
 }
 
-void printFrequencies()
-{
+void printFrequencies() {
     printf("Word Frequencies:\n");
 
     // Temporary array to sort items by frequency
     HashItem *sortedItems[TABLE_SIZE];
     int sortedIndex = 0;
 
-    for (int i = 0; i < TABLE_SIZE; ++i)
-    {
-        if (hashTable[i] != NULL)
-        {
+    // copy non-null hash table entries to the temporary array
+    for (int i = 0; i < TABLE_SIZE; ++i) {
+        if (hashTable[i] != NULL) {
             sortedItems[sortedIndex++] = hashTable[i];
         }
     }
 
-    qsort(sortedItems, sortedIndex, sizeof(HashItem *), cmp);
+    // we use qsort to sort the temporary array of hash items by frequency
+    qsort(sortedItems, sortedIndex, sizeof(HashItem*), cmp);
 
-    for (int i = 0; i < sortedIndex; ++i)
-    {
+    // print the sorted word frequencies
+    for (int i = 0; i < sortedIndex; ++i) {
         printf("%s: %d\n", sortedItems[i]->word, sortedItems[i]->frequency);
     }
 }
 
-int main()
-{
+int main() {
     char *words[] = {"apple", "banana", "apple", "orange", "banana", "apple"};
     int wordsCount = 6;
 
-    for (int i = 0; i < wordsCount; ++i)
-    {
+    for (int i = 0; i < wordsCount; ++i) {
         insert(words[i]);
     }
 
     printFrequencies();
 
     // Cleanup
-    for (int i = 0; i < TABLE_SIZE; ++i)
-    {
-        if (hashTable[i] != NULL)
-        {
+    for (int i = 0; i < TABLE_SIZE; ++i) {
+        if (hashTable[i] != NULL) {
             free(hashTable[i]->word);
             free(hashTable[i]);
         }
