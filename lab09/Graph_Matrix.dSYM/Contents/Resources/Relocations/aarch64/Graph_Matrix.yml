@@ -1,0 +1,12 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/stingrayyee/Documents/GitHub/5008/lab09/Graph_Matrix'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _generateGraph, symObjAddr: 0x0, symBinAddr: 0x100003AA0, symSize: 0xEC }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _generateGraph, symObjAddr: 0x0, symBinAddr: 0x100003AA0, symSize: 0xEC }
+  - { offsetInCU: 0x81, offset: 0x81, size: 0x8, addend: 0x0, symName: _printGraph, symObjAddr: 0xEC, symBinAddr: 0x100003B8C, symSize: 0xBC }
+  - { offsetInCU: 0xC1, offset: 0xC1, size: 0x8, addend: 0x0, symName: _nodeInDegree, symObjAddr: 0x1A8, symBinAddr: 0x100003C48, symSize: 0x74 }
+  - { offsetInCU: 0x121, offset: 0x121, size: 0x8, addend: 0x0, symName: _nodeOutDegree, symObjAddr: 0x21C, symBinAddr: 0x100003CBC, symSize: 0x74 }
+  - { offsetInCU: 0x181, offset: 0x181, size: 0x8, addend: 0x0, symName: _isConnected, symObjAddr: 0x290, symBinAddr: 0x100003D30, symSize: 0x5C }
+  - { offsetInCU: 0x1C5, offset: 0x1C5, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x2EC, symBinAddr: 0x100003D8C, symSize: 0x1A4 }
+...
