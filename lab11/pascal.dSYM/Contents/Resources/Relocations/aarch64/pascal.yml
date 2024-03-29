@@ -1,0 +1,8 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/xinruiyi/Desktop/5008/CS 5008/lab11/pascal'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _getRow, symObjAddr: 0x0, symBinAddr: 0x100003CD8, symSize: 0xDC }
+  - { offsetInCU: 0x4D, offset: 0x4D, size: 0x8, addend: 0x0, symName: _getRow, symObjAddr: 0x0, symBinAddr: 0x100003CD8, symSize: 0xDC }
+  - { offsetInCU: 0xAD, offset: 0xAD, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xDC, symBinAddr: 0x100003DB4, symSize: 0x154 }
+...
