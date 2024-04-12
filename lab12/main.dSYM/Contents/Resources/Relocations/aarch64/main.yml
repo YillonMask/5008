@@ -1,0 +1,21 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/xinruiyi/Desktop/5008/CS 5008/lab12/main'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _stringHash, symObjAddr: 0x0, symBinAddr: 0x10000322C, symSize: 0x3C }
+  - { offsetInCU: 0x11D, offset: 0x11D, size: 0x8, addend: 0x0, symName: _stringHash, symObjAddr: 0x0, symBinAddr: 0x10000322C, symSize: 0x3C }
+  - { offsetInCU: 0x153, offset: 0x153, size: 0x8, addend: 0x0, symName: _yourHash, symObjAddr: 0x3C, symBinAddr: 0x100003268, symSize: 0x78 }
+  - { offsetInCU: 0x1A5, offset: 0x1A5, size: 0x8, addend: 0x0, symName: _hashmap_create, symObjAddr: 0xB4, symBinAddr: 0x1000032E0, symSize: 0x118 }
+  - { offsetInCU: 0x1F7, offset: 0x1F7, size: 0x8, addend: 0x0, symName: _hashmap_delete, symObjAddr: 0x1CC, symBinAddr: 0x1000033F8, symSize: 0xD0 }
+  - { offsetInCU: 0x26F, offset: 0x26F, size: 0x8, addend: 0x0, symName: _free_node, symObjAddr: 0x29C, symBinAddr: 0x1000034C8, symSize: 0x5C }
+  - { offsetInCU: 0x295, offset: 0x295, size: 0x8, addend: 0x0, symName: _hashmap_hasKey, symObjAddr: 0x2F8, symBinAddr: 0x100003524, symSize: 0xD4 }
+  - { offsetInCU: 0x2E7, offset: 0x2E7, size: 0x8, addend: 0x0, symName: _hashmap_insert, symObjAddr: 0x3CC, symBinAddr: 0x1000035F8, symSize: 0x198 }
+  - { offsetInCU: 0x35F, offset: 0x35F, size: 0x8, addend: 0x0, symName: _my_strcpy, symObjAddr: 0x564, symBinAddr: 0x100003790, symSize: 0x70 }
+  - { offsetInCU: 0x398, offset: 0x398, size: 0x8, addend: 0x0, symName: _hashmap_getValue, symObjAddr: 0x5D4, symBinAddr: 0x100003800, symSize: 0xE4 }
+  - { offsetInCU: 0x3EC, offset: 0x3EC, size: 0x8, addend: 0x0, symName: _hashmap_removeKey, symObjAddr: 0x6B8, symBinAddr: 0x1000038E4, symSize: 0x13C }
+  - { offsetInCU: 0x44E, offset: 0x44E, size: 0x8, addend: 0x0, symName: _hashmap_printKeys, symObjAddr: 0x7F4, symBinAddr: 0x100003A20, symSize: 0xF8 }
+  - { offsetInCU: 0x4AE, offset: 0x4AE, size: 0x8, addend: 0x0, symName: _unitTest1, symObjAddr: 0x8EC, symBinAddr: 0x100003B18, symSize: 0xD4 }
+  - { offsetInCU: 0x4D6, offset: 0x4D6, size: 0x8, addend: 0x0, symName: _unitTest2, symObjAddr: 0x9C0, symBinAddr: 0x100003BEC, symSize: 0x100 }
+  - { offsetInCU: 0x4FE, offset: 0x4FE, size: 0x8, addend: 0x0, symName: _unitTest3, symObjAddr: 0xAC0, symBinAddr: 0x100003CEC, symSize: 0xC8 }
+  - { offsetInCU: 0x526, offset: 0x526, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xB88, symBinAddr: 0x100003DB4, symSize: 0x58 }
+...
