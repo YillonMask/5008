@@ -46,6 +46,8 @@ int yourHash(char *myKey, int numberOfBuckets)
     unsigned long hash = 5381;
     int c;
     while ((c = *myKey++))
+    // the *myKey++ syntax is a compact way of accessing the current character
+    // and then incrementing the pointer.
     {
         hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
     }

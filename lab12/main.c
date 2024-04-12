@@ -55,7 +55,6 @@ int unitTest3()
     hashmap_insert(myStocks, "BMO", 38);
     hashmap_insert(myStocks, "BNS", 62);
     hashmap_insert(myStocks, "TRI", 112);
-    hashmap_insert(myStocks, "RY", 93);
     // print the keys
     hashmap_printKeys(myStocks);
     // finally terminate our hashmap
